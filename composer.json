@@ -1,0 +1,37 @@
+{
+    "config": {
+        "platform": {
+           "php": "7.1.15"
+        }
+    },
+    "name": "larswolff/webonyx-laravel",
+    "description": "Webonyx and Laravel integration using GraphQL Schema Language",
+    "type": "library",
+    "require": {
+	"php": "^7.1.3",
+        "webonyx/graphql-php": "^0.12.0",
+	"laravel/framework": "5.6.*",
+	"psr/http-message": "^1.0",
+        "symfony/psr-http-message-bridge": "^1.0",
+        "zendframework/zend-diactoros": "^1.7"
+    },
+    "authors": [
+        {
+            "name": "Lars Wolff",
+            "email": "lars@larswolff.dk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LarsWolff\\GraphQLSchemaLanguage\\": "src/"
+    }
+},
+"autoload-dev": {
+    "psr-4": {
+        "LarsWolff\\GraphQLSchemaLanguage\\": "tests/"
+    }
+},
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    }
+}
